@@ -1,6 +1,7 @@
 package pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -18,34 +19,61 @@ public class FlightsPage extends BasePage {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(xpath = "//a[@class=\"Actionable-module__root___1Be0F Tab-module__link___3Etkm Tab-module__link--selected___bTkCG Actionable-module__focus-inset___3TZbM\"]")
+    @FindBy(xpath = "//span[contains(text(),'Flights')]")
     WebElement flights;
-    @FindBy(xpath = "//div[@data-testid=\"searchbox_origin\"]")
+
+    @FindBy(css = ".css-k008qs")
     WebElement startingPoint;
-    @FindBy(xpath ="//div[@data-testid=\"searchbox_destination\"]")
-    WebElement endingPoint;
-    @FindBy(css = "//div[@class=\"css-164c9py\"]//..")
-    List<WebElement> dates;
+
+    @FindBy(css = ".css-1tl2oa1")
+    WebElement fromPoint;
+
+//    @FindBy(xpath = "//div[@data-testid=\"searchbox_destination\"]")
+//    WebElement endingPoint;
+
+    @FindBy(css = ".css-bwf0ll")
+    WebElement checkBox;
+
+    @FindBy(xpath = "//input[@data-testid=\"searchbox_destination_input\"]")
+    WebElement toPoint;
+
+    @FindBy(xpath = "//div[@class='css-1eii3rq']")
+    WebElement clear;
+
+    @FindBy(xpath = "(//div[@class=\"css-164c9py\"])[2]//..")
+    WebElement dateTo;
+
+
    // @FindBy(css = ".xp__guests__count")
    // WebElement guestCount;
     @FindBy(xpath = "//button[@data-testid=\"searchbox_submit\"]")
     WebElement search;
 
-    public void addStartingPoint(String startingPointText) throws InterruptedException {
-        typeText(startingPoint, startingPointText);
-    }
+    WebElement keyAction;
 
-    public void addEndingPoint(String endingPointText) throws InterruptedException {
-        typeText(endingPoint, endingPointText);
+    public void addStartingPoint(String fromPointText) throws InterruptedException {
+        clickElement(startingPoint);
+        clickElement(clear);
+        typeText(fromPoint,fromPointText);
+        clickElement(checkBox);
+        keyAction = driver.findElement(By.cssSelector(".css-1tl2oa1"));
+        keyAction.sendKeys(Keys.TAB);
+       }
+
+    public void addEndingPoint(String toPointText) throws InterruptedException {
+       typeText(toPoint,toPointText);
+       clickElement(checkBox);
+        keyAction = driver.findElement(By.xpath("//input[@data-testid=\"searchbox_destination_input\"]"));
+        keyAction.sendKeys(Keys.TAB);
     }
 
     public void addDates(String departureDate, String returnDate) throws InterruptedException {
         //Check is date today's date or futures date
         //check is check out after check in date
         //Check is date displayed if not click next
-        clickElement(dates.get(0));
-        clickElement(driver.findElement(By.xpath("//span[@data-date-cell="+departureDate+"]")));
-        clickElement(driver.findElement(By.xpath("//span[@data-date-cell="+returnDate+"]")));
+        clickElement(dateTo);
+        clickElement(driver.findElement(By.xpath("//span[@data-date-cell='" + departureDate + "']")));
+        clickElement(driver.findElement(By.xpath("//span[@data-date-cell='" + returnDate + "']")));
     }
 
     public void clickSearch() throws InterruptedException {
