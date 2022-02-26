@@ -9,6 +9,12 @@ Feature: BookingFlight
     And I add ending point
     And I add departure date and return date
     And I click search
+    When I change first stop filter
+    And I select departs time
+    And I click on See flight button
+    And I click on Select button
+    When I click Next button
+    Then I populate Contact Details
     # click availability
     # verify search details
     Examples:

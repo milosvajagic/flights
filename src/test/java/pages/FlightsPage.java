@@ -4,11 +4,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
-import java.util.List;
-import java.util.Map;
+import org.openqa.selenium.support.ui.Select;
 
 public class FlightsPage extends BasePage {
     WebDriver driver;
@@ -43,9 +42,33 @@ public class FlightsPage extends BasePage {
     @FindBy(xpath = "(//div[@class=\"css-164c9py\"])[2]//..")
     WebElement dateTo;
 
+    @FindBy(xpath = "(//span[@class='InputRadio-module__field___16hZ8'])[2]")
+    WebElement stopCheckBox;
 
-   // @FindBy(css = ".xp__guests__count")
-   // WebElement guestCount;
+    @FindBy(xpath = "(//span[@class='InputCheckbox-module__field___1mRcZ'])[3]")
+    WebElement departTimeCheckBox;
+
+    @FindBy(xpath = "//button[@data-testid=\"flight_card_bound_select_flight\"][1]")
+    WebElement seeFlights;
+
+    @FindBy(xpath = "(//div[@data-testid='flight_details_inner_modal_select_button'])//button")
+    WebElement select;
+
+    @FindBy(xpath = "//div[@class='css-b07tw6']//button")
+    WebElement  next;
+
+    @FindBy(css = "#__bui-61")
+    WebElement email;
+
+    @FindBy(css = "#phone")
+    WebElement phone;
+
+    @FindBy(css = "#__bui-63")
+    WebElement firstName;
+
+    @FindBy(css = "#__bui-64")
+    WebElement lastName;
+
     @FindBy(xpath = "//button[@data-testid=\"searchbox_submit\"]")
     WebElement search;
 
@@ -82,5 +105,34 @@ public class FlightsPage extends BasePage {
 
     public void clickFlights() throws  InterruptedException{
         clickElement(flights);
+    }
+
+    public void selectStopCheckBox() throws InterruptedException{
+        clickElement(stopCheckBox);
+    }
+
+    public void selectDepartTimeheckBox() throws InterruptedException {
+        clickElement(departTimeCheckBox);
+    }
+
+    public void clickSeeFlights() throws InterruptedException {
+        clickElement(seeFlights);
+    }
+
+    public void clickSelectButton() throws InterruptedException {
+        clickElement(select);
+    }
+
+    public void clickNextButton() throws InterruptedException {
+        clickElement(next);
+    }
+    public void enterContactDetails(String emailText, String firstNameText, String lastNameText, String gender) throws InterruptedException {
+        typeText(email,emailText);
+        typeText(phone,Integer.toString(694718896));
+        typeText(firstName,firstNameText);
+        typeText(lastName,lastNameText);
+        WebElement dropDown = driver.findElement(By.cssSelector("#__bui-65"));
+        Select dropdown = new Select(dropDown);
+        dropdown.selectByVisibleText(gender);
     }
 }
