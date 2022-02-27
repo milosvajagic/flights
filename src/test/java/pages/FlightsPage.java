@@ -57,16 +57,16 @@ public class FlightsPage extends BasePage {
     @FindBy(xpath = "//div[@class='css-b07tw6']//button")
     WebElement  next;
 
-    @FindBy(css = "#__bui-61")
+    @FindBy(css = "#__bui-57")
     WebElement email;
 
     @FindBy(css = "#phone")
     WebElement phone;
 
-    @FindBy(css = "#__bui-63")
+    @FindBy(css = "#__bui-59")
     WebElement firstName;
 
-    @FindBy(css = "#__bui-64")
+    @FindBy(css = "#__bui-60")
     WebElement lastName;
 
     @FindBy(xpath = "//button[@data-testid=\"searchbox_submit\"]")
@@ -126,12 +126,12 @@ public class FlightsPage extends BasePage {
     public void clickNextButton() throws InterruptedException {
         clickElement(next);
     }
-    public void enterContactDetails(String emailText, String firstNameText, String lastNameText, String gender) throws InterruptedException {
+    public void enterContactDetails(String emailText, String firstNameText, String lastNameText, String gender, String phoneText) throws InterruptedException {
         typeText(email,emailText);
-        typeText(phone,Integer.toString(694718896));
+        typeText(phone, phoneText);
         typeText(firstName,firstNameText);
         typeText(lastName,lastNameText);
-        WebElement dropDown = driver.findElement(By.cssSelector("#__bui-65"));
+        WebElement dropDown = driver.findElement(By.cssSelector("#__bui-61"));
         Select dropdown = new Select(dropDown);
         dropdown.selectByVisibleText(gender);
     }
