@@ -1,0 +1,266 @@
+{
+  "uid" : "8bfbe6996d7fb0ca",
+  "name" : "Book a Flight row: \"1\"",
+  "fullName" : "BookingFlight: Book a Flight row: \"1\"",
+  "historyId" : "fb5a2447b784260ce59234f2a5f61bf8",
+  "time" : {
+    "start" : 1645887848499,
+    "stop" : 1645887864109,
+    "duration" : 15610
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 2,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "steps.BookingSteps.setUp()",
+    "time" : {
+      "start" : 1645887848504,
+      "stop" : 1645887850248,
+      "duration" : 1744
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Given  I load test data from \"BookingFlight\" \"BookingSheetFlight\" \"1\"",
+      "time" : {
+        "start" : 1645887850259,
+        "stop" : 1645887850601,
+        "duration" : 342
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "And  I navigate to Booking",
+      "time" : {
+        "start" : 1645887850603,
+        "stop" : 1645887852935,
+        "duration" : 2332
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "And  I click on Flights",
+      "time" : {
+        "start" : 1645887852935,
+        "stop" : 1645887855447,
+        "duration" : 2512
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "When  I add starting point",
+      "time" : {
+        "start" : 1645887855447,
+        "stop" : 1645887857050,
+        "duration" : 1603
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "And  I add ending point",
+      "time" : {
+        "start" : 1645887857051,
+        "stop" : 1645887858390,
+        "duration" : 1339
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "And  I add departure date and return date",
+      "time" : {
+        "start" : 1645887858391,
+        "stop" : 1645887859607,
+        "duration" : 1216
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "And  I click search",
+      "time" : {
+        "start" : 1645887859607,
+        "stop" : 1645887861551,
+        "duration" : 1944
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "When  I change first stop filter",
+      "time" : {
+        "start" : 1645887861552,
+        "stop" : 1645887862633,
+        "duration" : 1081
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "And  I select departs time",
+      "time" : {
+        "start" : 1645887862633,
+        "stop" : 1645887862934,
+        "duration" : 301
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 9,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "steps.BookingSteps.tearDown()",
+    "time" : {
+      "start" : 1645887862935,
+      "stop" : 1645887864108,
+      "duration" : 1173
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "c6494482e20d977",
+      "name" : "screenshot on end or fail",
+      "source" : "c6494482e20d977.png",
+      "type" : "image/png",
+      "size" : 150363
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "Miloss-MacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "1304@Miloss-MacBook-Pro.local.TestNG-PoolService-0(12)"
+  }, {
+    "name" : "feature",
+    "value" : "BookingFlight"
+  }, {
+    "name" : "story",
+    "value" : "Book a Flight row: \"1\""
+  }, {
+    "name" : "suite",
+    "value" : "BookingFlight"
+  }, {
+    "name" : "testClass",
+    "value" : "Book a Flight row: \"1\""
+  }, {
+    "name" : "framework",
+    "value" : "cucumber4jvm"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "gherkin_uri",
+    "value" : "file:///Users/milosvajagic/IdeaProjects/BookingFlight/src/test/java/features/Booking.feature"
+  }, {
+    "name" : "package",
+    "value" : "src.test.java.features.Booking_feature.BookingFlight"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "row",
+    "value" : "1"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "e35c34110874ee49",
+      "status" : "passed",
+      "time" : {
+        "start" : 1645887800525,
+        "stop" : 1645887822735,
+        "duration" : 22210
+      }
+    }, {
+      "uid" : "3924d845092382f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1645887512128,
+        "stop" : 1645887527199,
+        "duration" : 15071
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "8bfbe6996d7fb0ca.json",
+  "parameterValues" : [ "1" ]
+}

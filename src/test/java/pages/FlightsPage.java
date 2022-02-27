@@ -1,13 +1,13 @@
 package pages;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
-import java.util.List;
-import java.util.Map;
+import org.openqa.selenium.support.ui.Select;
 
 public class FlightsPage extends BasePage {
     WebDriver driver;
@@ -18,34 +18,85 @@ public class FlightsPage extends BasePage {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(xpath = "//a[@class=\"Actionable-module__root___1Be0F Tab-module__link___3Etkm Tab-module__link--selected___bTkCG Actionable-module__focus-inset___3TZbM\"]")
+    @FindBy(xpath = "//span[contains(text(),'Flights')]")
     WebElement flights;
-    @FindBy(xpath = "//div[@data-testid=\"searchbox_origin\"]")
+
+    @FindBy(css = ".css-k008qs")
     WebElement startingPoint;
-    @FindBy(xpath ="//div[@data-testid=\"searchbox_destination\"]")
-    WebElement endingPoint;
-    @FindBy(css = "//div[@class=\"css-164c9py\"]//..")
-    List<WebElement> dates;
-   // @FindBy(css = ".xp__guests__count")
-   // WebElement guestCount;
+
+    @FindBy(css = ".css-1tl2oa1")
+    WebElement fromPoint;
+
+//    @FindBy(xpath = "//div[@data-testid=\"searchbox_destination\"]")
+//    WebElement endingPoint;
+
+    @FindBy(css = ".css-bwf0ll")
+    WebElement checkBox;
+
+    @FindBy(xpath = "//input[@data-testid=\"searchbox_destination_input\"]")
+    WebElement toPoint;
+
+    @FindBy(xpath = "//div[@class='css-1eii3rq']")
+    WebElement clear;
+
+    @FindBy(xpath = "(//div[@class=\"css-164c9py\"])[2]//..")
+    WebElement dateTo;
+
+    @FindBy(xpath = "(//span[@class='InputRadio-module__field___16hZ8'])[2]")
+    WebElement stopCheckBox;
+
+    @FindBy(xpath = "(//span[@class='InputCheckbox-module__field___1mRcZ'])[3]")
+    WebElement departTimeCheckBox;
+
+    @FindBy(xpath = "//button[@data-testid=\"flight_card_bound_select_flight\"][1]")
+    WebElement seeFlights;
+
+    @FindBy(xpath = "(//div[@data-testid='flight_details_inner_modal_select_button'])//button")
+    WebElement select;
+
+    @FindBy(xpath = "//div[@class='css-b07tw6']//button")
+    WebElement  next;
+
+    @FindBy(css = "#__bui-57")
+    WebElement email;
+
+    @FindBy(css = "#phone")
+    WebElement phone;
+
+    @FindBy(css = "#__bui-59")
+    WebElement firstName;
+
+    @FindBy(css = "#__bui-60")
+    WebElement lastName;
+
     @FindBy(xpath = "//button[@data-testid=\"searchbox_submit\"]")
     WebElement search;
 
-    public void addStartingPoint(String startingPointText) throws InterruptedException {
-        typeText(startingPoint, startingPointText);
-    }
+    WebElement keyAction;
 
-    public void addEndingPoint(String endingPointText) throws InterruptedException {
-        typeText(endingPoint, endingPointText);
+    public void addStartingPoint(String fromPointText) throws InterruptedException {
+        clickElement(startingPoint);
+        clickElement(clear);
+        typeText(fromPoint,fromPointText);
+        clickElement(checkBox);
+        keyAction = driver.findElement(By.cssSelector(".css-1tl2oa1"));
+        keyAction.sendKeys(Keys.TAB);
+       }
+
+    public void addEndingPoint(String toPointText) throws InterruptedException {
+       typeText(toPoint,toPointText);
+       clickElement(checkBox);
+        keyAction = driver.findElement(By.xpath("//input[@data-testid=\"searchbox_destination_input\"]"));
+        keyAction.sendKeys(Keys.TAB);
     }
 
     public void addDates(String departureDate, String returnDate) throws InterruptedException {
         //Check is date today's date or futures date
         //check is check out after check in date
         //Check is date displayed if not click next
-        clickElement(dates.get(0));
-        clickElement(driver.findElement(By.xpath("//span[@data-date-cell="+departureDate+"]")));
-        clickElement(driver.findElement(By.xpath("//span[@data-date-cell="+returnDate+"]")));
+        clickElement(dateTo);
+        clickElement(driver.findElement(By.xpath("//span[@data-date-cell='" + departureDate + "']")));
+        clickElement(driver.findElement(By.xpath("//span[@data-date-cell='" + returnDate + "']")));
     }
 
     public void clickSearch() throws InterruptedException {
@@ -54,5 +105,34 @@ public class FlightsPage extends BasePage {
 
     public void clickFlights() throws  InterruptedException{
         clickElement(flights);
+    }
+
+    public void selectStopCheckBox() throws InterruptedException{
+        clickElement(stopCheckBox);
+    }
+
+    public void selectDepartTimeheckBox() throws InterruptedException {
+        clickElement(departTimeCheckBox);
+    }
+
+    public void clickSeeFlights() throws InterruptedException {
+        clickElement(seeFlights);
+    }
+
+    public void clickSelectButton() throws InterruptedException {
+        clickElement(select);
+    }
+
+    public void clickNextButton() throws InterruptedException {
+        clickElement(next);
+    }
+    public void enterContactDetails(String emailText, String firstNameText, String lastNameText, String gender, String phoneText) throws InterruptedException {
+        typeText(email,emailText);
+        typeText(phone, phoneText);
+        typeText(firstName,firstNameText);
+        typeText(lastName,lastNameText);
+        WebElement dropDown = driver.findElement(By.cssSelector("#__bui-61"));
+        Select dropdown = new Select(dropDown);
+        dropdown.selectByVisibleText(gender);
     }
 }

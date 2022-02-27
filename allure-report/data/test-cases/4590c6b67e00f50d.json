@@ -1,0 +1,314 @@
+{
+  "uid" : "4590c6b67e00f50d",
+  "name" : "Book a Flight row: \"1\"",
+  "fullName" : "BookingFlight: Book a Flight row: \"1\"",
+  "historyId" : "1a084a7c26e098fcc3a61c5344b667a7",
+  "time" : {
+    "start" : 1645890154925,
+    "stop" : 1645890179236,
+    "duration" : 24311
+  },
+  "status" : "broken",
+  "statusMessage" : "Keys to send should be a not null CharSequence",
+  "statusTrace" : "java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence\n\tat org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\n\tat com.sun.proxy.$Proxy20.sendKeys(Unknown Source)\n\tat pages.CommonMethods.typeText(CommonMethods.java:46)\n\tat pages.FlightsPage.enterContactDetails(FlightsPage.java:125)\n\tat steps.BookingSteps.iPopulateContactDetails(BookingSteps.java:117)\n\tat ✽.I populate Contact Details(file:///Users/milosvajagic/IdeaProjects/BookingFlight/src/test/java/features/Booking.feature:17)\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "steps.BookingSteps.setUp()",
+    "time" : {
+      "start" : 1645890154929,
+      "stop" : 1645890156899,
+      "duration" : 1970
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "Keys to send should be a not null CharSequence",
+    "statusTrace" : "java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence\n\tat org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\n\tat com.sun.proxy.$Proxy20.sendKeys(Unknown Source)\n\tat pages.CommonMethods.typeText(CommonMethods.java:46)\n\tat pages.FlightsPage.enterContactDetails(FlightsPage.java:125)\n\tat steps.BookingSteps.iPopulateContactDetails(BookingSteps.java:117)\n\tat ✽.I populate Contact Details(file:///Users/milosvajagic/IdeaProjects/BookingFlight/src/test/java/features/Booking.feature:17)\n",
+    "steps" : [ {
+      "name" : "Given  I load test data from \"BookingFlight\" \"BookingSheetFlight\" \"1\"",
+      "time" : {
+        "start" : 1645890156909,
+        "stop" : 1645890157392,
+        "duration" : 483
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "And  I navigate to Booking",
+      "time" : {
+        "start" : 1645890157393,
+        "stop" : 1645890159724,
+        "duration" : 2331
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "And  I click on Flights",
+      "time" : {
+        "start" : 1645890159725,
+        "stop" : 1645890162439,
+        "duration" : 2714
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "When  I add starting point",
+      "time" : {
+        "start" : 1645890162440,
+        "stop" : 1645890164078,
+        "duration" : 1638
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "And  I add ending point",
+      "time" : {
+        "start" : 1645890164078,
+        "stop" : 1645890165407,
+        "duration" : 1329
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "And  I add departure date and return date",
+      "time" : {
+        "start" : 1645890165407,
+        "stop" : 1645890166565,
+        "duration" : 1158
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "And  I click search",
+      "time" : {
+        "start" : 1645890166566,
+        "stop" : 1645890167758,
+        "duration" : 1192
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "When  I change first stop filter",
+      "time" : {
+        "start" : 1645890167758,
+        "stop" : 1645890174810,
+        "duration" : 7052
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "And  I select departs time",
+      "time" : {
+        "start" : 1645890174810,
+        "stop" : 1645890175073,
+        "duration" : 263
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "And  I click on See flight button",
+      "time" : {
+        "start" : 1645890175073,
+        "stop" : 1645890175879,
+        "duration" : 806
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "And  I click on Select button",
+      "time" : {
+        "start" : 1645890175879,
+        "stop" : 1645890176280,
+        "duration" : 401
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "When  I click Next button",
+      "time" : {
+        "start" : 1645890176280,
+        "stop" : 1645890177398,
+        "duration" : 1118
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "Then  I populate Contact Details",
+      "time" : {
+        "start" : 1645890177398,
+        "stop" : 1645890178104,
+        "duration" : 706
+      },
+      "status" : "broken",
+      "statusMessage" : "Keys to send should be a not null CharSequence",
+      "statusTrace" : "java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence\n\tat org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\n\tat java.lang.reflect.Method.invoke(Method.java:498)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\n\tat com.sun.proxy.$Proxy20.sendKeys(Unknown Source)\n\tat pages.CommonMethods.typeText(CommonMethods.java:46)\n\tat pages.FlightsPage.enterContactDetails(FlightsPage.java:125)\n\tat steps.BookingSteps.iPopulateContactDetails(BookingSteps.java:117)\n\tat ✽.I populate Contact Details(file:///Users/milosvajagic/IdeaProjects/BookingFlight/src/test/java/features/Booking.feature:17)\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 13,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "steps.BookingSteps.tearDown()",
+    "time" : {
+      "start" : 1645890178105,
+      "stop" : 1645890179234,
+      "duration" : 1129
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "e3c143e2df06c90a",
+      "name" : "screenshot on end or fail",
+      "source" : "e3c143e2df06c90a.png",
+      "type" : "image/png",
+      "size" : 117637
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "Miloss-MacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "1989@Miloss-MacBook-Pro.local.TestNG-PoolService-0(12)"
+  }, {
+    "name" : "feature",
+    "value" : "BookingFlight"
+  }, {
+    "name" : "story",
+    "value" : "Book a Flight row: \"1\""
+  }, {
+    "name" : "suite",
+    "value" : "BookingFlight"
+  }, {
+    "name" : "testClass",
+    "value" : "Book a Flight row: \"1\""
+  }, {
+    "name" : "framework",
+    "value" : "cucumber4jvm"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "gherkin_uri",
+    "value" : "file:///Users/milosvajagic/IdeaProjects/BookingFlight/src/test/java/features/Booking.feature"
+  }, {
+    "name" : "package",
+    "value" : "src.test.java.features.Booking_feature.BookingFlight"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "row",
+    "value" : "1"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4590c6b67e00f50d.json",
+  "parameterValues" : [ "1" ]
+}

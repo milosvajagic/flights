@@ -5,6 +5,7 @@ import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.testng.Reporter;
 import pages.FlightsPage;
@@ -68,15 +69,53 @@ public class BookingSteps extends BaseTest {
 
 
     @And("I add departure date and return date")
-    public void iAddDepartureDateAndReturnDate() throws InterruptedException {
+    public void iAddDepartureDateAndReturnDate() throws InterruptedException, IOException {
         FlightsPage flightsPage = new FlightsPage(driver);
         flightsPage.addDates(data.get("DepartureDate"), data.get("ReturnDate"));
+        takeScreenshot("DateScreenshot");
     }
 
     @And("I click search")
     public void iClickSearch() throws InterruptedException {
         FlightsPage flightsPage = new FlightsPage(driver);
         flightsPage.clickSearch();
+    }
+
+    @When("I change first stop filter")
+    public void iChangeFirstStopFilter() throws InterruptedException {
+        FlightsPage flightsPage = new FlightsPage(driver);
+        flightsPage.selectStopCheckBox();
+    }
+
+    @And("I select departs time")
+    public void iSelectDepartsTime() throws InterruptedException {
+        FlightsPage flightsPage = new FlightsPage(driver);
+        flightsPage.selectDepartTimeheckBox();
+    }
+
+    @And("I click on See flight button")
+    public void iClickOnSeeFlightButton() throws InterruptedException {
+        FlightsPage flightsPage = new FlightsPage(driver);
+        flightsPage.clickSeeFlights();
+    }
+
+    @And("I click on Select button")
+    public void iClickOnSelectButton() throws InterruptedException {
+        FlightsPage flightsPage = new FlightsPage(driver);
+        flightsPage.clickSelectButton();
+
+    }
+
+    @When("I click Next button")
+    public void iClickNextButton() throws InterruptedException {
+        FlightsPage flightsPage = new FlightsPage(driver);
+        flightsPage.clickNextButton();
+    }
+
+    @Then("I populate Contact Details")
+    public void iPopulateContactDetails() throws InterruptedException {
+        FlightsPage flightsPage = new FlightsPage(driver);
+        flightsPage.enterContactDetails(data.get("Email"),data.get("FirstName"),data.get("LastName"), data.get("Gender"), data.get("Phone"));
     }
 }
 

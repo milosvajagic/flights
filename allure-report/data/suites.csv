@@ -1,0 +1,8 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sun Feb 27 13:39:42 CET 2022","Sun Feb 27 13:40:14 CET 2022","31923","","BookingFlight","","Book a Flight row: ""1""","","Book a Flight row: ""1""",""
+"passed","Sat Feb 26 15:47:57 CET 2022","Sat Feb 26 15:48:10 CET 2022","13238","","BookingFlight","","Book a Flight row: ""1""","","Book a Flight row: ""1""",""
+"passed","Sat Feb 26 16:16:49 CET 2022","Sat Feb 26 16:17:14 CET 2022","24957","","BookingFlight","","Book a Flight row: ""1""","","Book a Flight row: ""1""",""
+"broken","Mon Feb 21 20:22:31 CET 2022","Mon Feb 21 20:22:35 CET 2022","3351","","Booking","","Book a Flight row: ""2""","","Book a Flight row: ""2""",""
+"passed","Sat Feb 26 16:04:08 CET 2022","Sat Feb 26 16:04:24 CET 2022","15610","","BookingFlight","","Book a Flight row: ""1""","","Book a Flight row: ""1""",""
+"passed","Sat Feb 26 16:25:03 CET 2022","Sat Feb 26 16:25:28 CET 2022","25056","","BookingFlight","","Book a Flight row: ""1""","","Book a Flight row: ""1""",""
+"passed","Sat Feb 26 16:10:41 CET 2022","Sat Feb 26 16:11:06 CET 2022","24731","","BookingFlight","","Book a Flight row: ""1""","","Book a Flight row: ""1""",""

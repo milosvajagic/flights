@@ -1,0 +1,224 @@
+{
+  "uid" : "a97cbc50a2dbaaff",
+  "name" : "Book a Flight row: \"1\"",
+  "fullName" : "Booking: Book a Flight row: \"1\"",
+  "historyId" : "40d64309f5c4ad2c9d225fc8e8f5dc",
+  "time" : {
+    "start" : 1645471813704,
+    "stop" : 1645471816545,
+    "duration" : 2841
+  },
+  "status" : "broken",
+  "statusMessage" : "src/test/test_data/Booking2.xlsx (No such file or directory)",
+  "statusTrace" : "java.io.FileNotFoundException: src/test/test_data/Booking2.xlsx (No such file or directory)\n\tat java.io.FileInputStream.open0(Native Method)\n\tat java.io.FileInputStream.open(FileInputStream.java:195)\n\tat java.io.FileInputStream.<init>(FileInputStream.java:138)\n\tat java.io.FileInputStream.<init>(FileInputStream.java:93)\n\tat excel_core.ExcelUtilities.getRowData(ExcelUtilities.java:15)\n\tat steps.BookingSteps.iLoadTestDataFrom(BookingSteps.java:40)\n\tat ✽.I load test data from \"Booking2\" \"BookingSheet2\" \"1\"(file:///Users/milosvajagic/IdeaProjects/BookingFlight/src/test/java/features/Booking.feature:5)\n",
+  "flaky" : false,
+  "newFailed" : false,
+  "newBroken" : false,
+  "newPassed" : false,
+  "retriesCount" : 0,
+  "retriesStatusChange" : false,
+  "beforeStages" : [ {
+    "name" : "steps.BookingSteps.setUp()",
+    "time" : {
+      "start" : 1645471813709,
+      "stop" : 1645471815437,
+      "duration" : 1728
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "src/test/test_data/Booking2.xlsx (No such file or directory)",
+    "statusTrace" : "java.io.FileNotFoundException: src/test/test_data/Booking2.xlsx (No such file or directory)\n\tat java.io.FileInputStream.open0(Native Method)\n\tat java.io.FileInputStream.open(FileInputStream.java:195)\n\tat java.io.FileInputStream.<init>(FileInputStream.java:138)\n\tat java.io.FileInputStream.<init>(FileInputStream.java:93)\n\tat excel_core.ExcelUtilities.getRowData(ExcelUtilities.java:15)\n\tat steps.BookingSteps.iLoadTestDataFrom(BookingSteps.java:40)\n\tat ✽.I load test data from \"Booking2\" \"BookingSheet2\" \"1\"(file:///Users/milosvajagic/IdeaProjects/BookingFlight/src/test/java/features/Booking.feature:5)\n",
+    "steps" : [ {
+      "name" : "Given  I load test data from \"Booking2\" \"BookingSheet2\" \"1\"",
+      "time" : {
+        "start" : 1645471815447,
+        "stop" : 1645471815452,
+        "duration" : 5
+      },
+      "status" : "broken",
+      "statusMessage" : "src/test/test_data/Booking2.xlsx (No such file or directory)",
+      "statusTrace" : "java.io.FileNotFoundException: src/test/test_data/Booking2.xlsx (No such file or directory)\n\tat java.io.FileInputStream.open0(Native Method)\n\tat java.io.FileInputStream.open(FileInputStream.java:195)\n\tat java.io.FileInputStream.<init>(FileInputStream.java:138)\n\tat java.io.FileInputStream.<init>(FileInputStream.java:93)\n\tat excel_core.ExcelUtilities.getRowData(ExcelUtilities.java:15)\n\tat steps.BookingSteps.iLoadTestDataFrom(BookingSteps.java:40)\n\tat ✽.I load test data from \"Booking2\" \"BookingSheet2\" \"1\"(file:///Users/milosvajagic/IdeaProjects/BookingFlight/src/test/java/features/Booking.feature:5)\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true
+    }, {
+      "name" : "And  I navigate to Booking",
+      "time" : {
+        "start" : 1645471815453,
+        "stop" : 1645471815454,
+        "duration" : 1
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "And  I click on Flights",
+      "time" : {
+        "start" : 1645471815454,
+        "stop" : 1645471815454,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "When  I add starting point",
+      "time" : {
+        "start" : 1645471815454,
+        "stop" : 1645471815454,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "And  I add ending point",
+      "time" : {
+        "start" : 1645471815455,
+        "stop" : 1645471815455,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "And  I add departure date and return date",
+      "time" : {
+        "start" : 1645471815455,
+        "stop" : 1645471815455,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "And  I click search",
+      "time" : {
+        "start" : 1645471815456,
+        "stop" : 1645471815456,
+        "duration" : 0
+      },
+      "status" : "skipped",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : false,
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 7,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "steps.BookingSteps.tearDown()",
+    "time" : {
+      "start" : 1645471815456,
+      "stop" : 1645471816543,
+      "duration" : 1087
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "8cb93ea2e02029d",
+      "name" : "screenshot on end or fail",
+      "source" : "8cb93ea2e02029d.png",
+      "type" : "image/png",
+      "size" : 6155
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "Miloss-MacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "2690@Miloss-MacBook-Pro.local.PoolService-0(15)"
+  }, {
+    "name" : "feature",
+    "value" : "Booking"
+  }, {
+    "name" : "story",
+    "value" : "Book a Flight row: \"1\""
+  }, {
+    "name" : "suite",
+    "value" : "Booking"
+  }, {
+    "name" : "testClass",
+    "value" : "Book a Flight row: \"1\""
+  }, {
+    "name" : "framework",
+    "value" : "cucumber4jvm"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "gherkin_uri",
+    "value" : "file:///Users/milosvajagic/IdeaProjects/BookingFlight/src/test/java/features/Booking.feature"
+  }, {
+    "name" : "package",
+    "value" : "src.test.java.features.Booking_feature.Booking"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "row",
+    "value" : "1"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a97cbc50a2dbaaff.json",
+  "parameterValues" : [ "1" ]
+}
