@@ -57,16 +57,16 @@ public class FlightsPage extends BasePage {
     @FindBy(xpath = "//div[@class='css-b07tw6']//button")
     WebElement  next;
 
-    @FindBy(css = "#__bui-57")
+    @FindBy(xpath = "//input[@name='email']")
     WebElement email;
 
     @FindBy(css = "#phone")
     WebElement phone;
 
-    @FindBy(css = "#__bui-59")
+    @FindBy(xpath = "//input[@name=\"passengers.0.firstName\"]")
     WebElement firstName;
 
-    @FindBy(css = "#__bui-60")
+    @FindBy(xpath = "//input[@name=\"passengers.0.lastName\"]")
     WebElement lastName;
 
     @FindBy(xpath = "//button[@data-testid=\"searchbox_submit\"]")
@@ -131,7 +131,7 @@ public class FlightsPage extends BasePage {
         typeText(phone, phoneText);
         typeText(firstName,firstNameText);
         typeText(lastName,lastNameText);
-        WebElement dropDown = driver.findElement(By.cssSelector("#__bui-61"));
+        WebElement dropDown = driver.findElement(By.xpath("//select[@name=\"passengers.0.gender\"]"));
         Select dropdown = new Select(dropDown);
         dropdown.selectByVisibleText(gender);
     }

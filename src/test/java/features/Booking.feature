@@ -20,4 +20,5 @@ Feature: BookingFlight
     Examples:
       | row |
       | 1 |
+      | 2 |
 

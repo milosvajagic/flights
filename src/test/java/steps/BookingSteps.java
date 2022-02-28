@@ -113,9 +113,10 @@ public class BookingSteps extends BaseTest {
     }
 
     @Then("I populate Contact Details")
-    public void iPopulateContactDetails() throws InterruptedException {
+    public void iPopulateContactDetails() throws InterruptedException, IOException {
         FlightsPage flightsPage = new FlightsPage(driver);
         flightsPage.enterContactDetails(data.get("Email"),data.get("FirstName"),data.get("LastName"), data.get("Gender"), data.get("Phone"));
+        takeScreenshot("ContactDetailsScreenshot");
     }
 }
 
